@@ -38,7 +38,6 @@
       <a {% if endpoint == request.endpoint %} class="active item" {% else %} class="item" {% endif %}
         href="{{ url_for(endpoint) }}">{{ caption }}</a>
       {%- endfor %}
-      <div class="item" style="float:right"><a href="https://github.com/puppet-community/puppetboard" target="_blank">v0.0.4</a></div>
     </nav>
     <div class="ui grid padding-bottom">
       <div class="one wide column"></div>
@@ -51,12 +50,6 @@
     <div id="scroll-btn-top">
       <i class="large arrow up icon"></i>
     </div>
-
-    <footer class="ui absolute fixed bottom">
-      <div>
-	Copyright &copy; 2013-{{ now('%Y') }} <a href="https://github.com/daenney" target="_blank">Daniele Sluijters</a>. <span style="float:right">Live from PuppetDB.</span>
-      </div>
-    </footer>
 
     {% if config.OFFLINE_MODE %}
     <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
