@@ -1,8 +1,8 @@
-PUPPETDB_HOST = 'localhost'
-PUPPETDB_PORT = 8080
-PUPPETDB_SSL_VERIFY = True
-PUPPETDB_KEY = None
-PUPPETDB_CERT = None
+PUPPETDB_HOST = '172.28.128.3'
+PUPPETDB_PORT = 8081
+PUPPETDB_SSL_VERIFY = False
+PUPPETDB_KEY = '/home/vmazzi/Documents/learning/puppetboard/certs/puppetdb/key.pem'
+PUPPETDB_CERT = '/home/vmazzi/Documents/learning/puppetboard/certs/puppetdb/cert.pem'
 PUPPETDB_TIMEOUT = 20
 DEV_LISTEN_HOST = '127.0.0.1'
 DEV_LISTEN_PORT = 5000
